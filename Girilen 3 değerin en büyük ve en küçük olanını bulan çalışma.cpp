@@ -13,29 +13,22 @@ int main() {
 	cin >> c;
 	cout << "Girdiğiniz değerler = " << a << "," << b << "," << c << endl;
 
-	if (a > b && b > c) {
-		cout << "En büyük değer = " << a << endl;
-		cout << "En küçük değer = " << c << endl;
-	}
-	else if (a > b && a > c && b < c) {
-		cout << "En büyük değer = " << a << endl;
-		cout << "En küçük değer = " << b << endl;
-	}
-	else if (b > a && a > c) {
-		cout << "En büyük değer = " << b << endl;
-		cout << "En küçük değer = " << c << endl;
-	}
-	else if (b > a && b > c && c > a) {
-		cout << "En büyük değer = " << b << endl;
-		cout << "En küçük değer = " << a << endl;
-	}
-	else if (c > a && a > b) {
-		cout << "En büyük değer = " << c << endl;
-		cout << "En küçük değer = " << b << endl;
-	}
-	else if (c > a && c > b && a < b) {
-		cout << "En büyük değer = " << c << endl;
-		cout << "En küçük değer = " << a << endl;
-	}
+	int enkucuk = a;
+	int enbuyuk = a;
 
+	if (b < enkucuk) {
+		enkucuk = b;
+	}
+	if (c < enkucuk) {
+		enkucuk = c;
+	}
+	if (b > enbuyuk) {
+		enbuyuk = b;
+	}
+	if (c > enbuyuk) {
+		enbuyuk = c; 
+	}
+	cout << "En büyük değer = " << enbuyuk << endl;
+	cout << "En küçük değer = " << enkucuk << endl;
+	return 0;
 }
