@@ -12,7 +12,7 @@ int main() {
 	cin >> surat;
 	int saat = mesafe / surat;
 	float dakika = (float)mesafe / surat - saat;
-	float dakika2 = dakika * 60; //12.2 dakika
+	float dakika2 = dakika * 60; 
 	int dakika3 = dakika * 60;
 	float saniye = dakika2 - dakika3;
 	int saniye2 = saniye * 60;
