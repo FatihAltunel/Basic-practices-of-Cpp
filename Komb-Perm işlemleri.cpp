@@ -31,15 +31,29 @@ while(true){
 
 	if (harf == 'C' || harf == 'c') {
 		int sayı1, sayı2;
-		cout << "Lütfen Kombinasyon işlemi için 2 sayı giriniz:" << endl;
-		cin >> sayı1 >> sayı2;
+		cout << "Lütfen seçim sayısını(n) giriniz: " << endl;
+		cin >> sayı1;
+		cout << "Lütfen eleman sayısını(r) giriniz: " << endl;
+		cin >> sayı2;
+		if (sayı1 < sayı2) {
+		cout << "Seçim sayısı(n), eleman sayısına(r) eşit veya eleman sayısından(r) büyük olmalıdır. (n>=r)" << endl;
+		}
+		else{
 		cout << "C(" << sayı1 << "," << sayı2 << ") " << "Sonucunuz = " << kombinasyon(sayı1, sayı2) << endl;
+		}
 	}
 	else if (harf == 'P' || harf == 'p') {
 		int sayı1, sayı2;
-		cout << "Lütfen Permütasyın işlemi için 2 sayı giriniz:" << endl;
-		cin >> sayı1 >> sayı2;
+		cout << "Lütfen seçim sayısını(n) giriniz: " << endl;
+		cin >> sayı1;
+		cout << "Lütfen eleman sayısını(r) giriniz: " << endl;
+		cin >> sayı2;
+		if (sayı1 < sayı2) {
+		cout<<"Seçim sayısı(n), eleman sayısına(r) eşit veya eleman sayısından(r) büyük olmalıdır. (n>=r)" << endl; 
+		}
+		else {
 		cout << "P(" << sayı1 << "," << sayı2 << ") " << "sonucunuz = " << permütasyon(sayı1, sayı2) << endl;
+		}
 	}
 	else {
 		cout << "Sadece ""C, c"" ve ""P, p"" harflerini girebilirsiniz!!!" << endl;
