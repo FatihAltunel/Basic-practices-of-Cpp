@@ -33,7 +33,8 @@ int main() {
 	for (int i = 0; i < terimsayisi; i++) {
 		toplam += dizi[i];
 	}
-	cout << "Dizideki terimlerin toplamı = " << toplam << "\nDizideki terimlerin ortalaması = " << toplam / terimsayisi << endl; 
+	float ortalama = (float) toplam/terimsayisi;
+	cout << "Dizideki terimlerin toplamı = " << toplam << "\nDizideki terimlerin ortalaması = " << ortalama << endl; 
 	delete[]dizi; 
 	return 0;
 }
