@@ -23,7 +23,7 @@ int main() {
 		double islem = pow(2, i) - 1;
 		if (asalmi(islem)) { 
 			sayac++;
-			cout<<sayac<<". terim --> " << islem << endl;
+			cout<<sayac<<". terim --> " <<fixed << setprecision(0) << islem << endl;
 		}
 	}
 } 
