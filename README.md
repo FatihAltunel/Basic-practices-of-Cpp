@@ -1,1 +1,1 @@
-# C++ Çalışmalarımın olduğu repositories
+# basic Cpp projects
